@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather or Not to Go</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <span>Weather or Not to Go</span>
+        </div>
+        <div class="row">
+            <div class="panel panel-default panel-transparent col-lg-12">
+                <div class="panel">
+                    <form id="year-form">
+                        <label for="zip-input">Search Zip Code:</label>
+                        <input class="zipbox" placeholder="Enter Zip" type="number" id="zip-input">
+                        <input id="zipCode" type="submit" class="btn btn-lg" value="Submit">
+                    </form>
+                </div>
+                <div class="panel panel-default panel-transparent col-lg-12">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Weather Forecast</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <table class="col-sm-12">
+                            <thead id="weatherTime">
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="weatherIcons">
+                                <tr id="hourlyForecast">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default panel-transparent col-lg-12">
+            <div class="panel-heading">
+                <h3 class="panel-title">Events Nearby</h3>
+
+            </div>
+            <div class="panel-body">
+                <div>
+                    <table class="col-sm-12">
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <th class="event-head col-sm-10">Event Info</th>
+                                    <th class="event-head col-sm-2">Start Time</th>
+                                </tr>
+                        </thead>
+
+                        <tbody id="eventResults">
+                            <tr>
+                                <td id="addRow"></td>
+                                <td id="addRow"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel panel-default panel-transparent col-lg-12">
+            <div class="panel-body">
+                <img src="assets/images/ArtImgozwPVl_n-min.png" alt="google maps">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
