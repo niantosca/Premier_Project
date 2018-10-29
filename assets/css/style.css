@@ -10,7 +10,7 @@
 }
 
 .jumbotron {
-    font-family: 'Knewave', cursive;
+    font-family: 'Lato', sans-serif;
     font-size: 55px;
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@ body {
 
 .panel-title {
 text-align: center;
-font-family: 'Knewave', cursive;
+font-family: 'Lato', sans-serif;
 font-size: 27px;
 text-shadow: black 4px 4px 4px;
 }

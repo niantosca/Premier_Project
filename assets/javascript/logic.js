@@ -49,6 +49,10 @@ $(document).ready(function () {
 
         location = $("#zip-input").val().trim();
         var queryURL = "https://api.openweathermap.org/data/2.5/forecast?zip=" + location + ",us&APPID=815a2a795482a610cc6a76c55b68ac5a";
+        document.getElementById("weatherTime").innerHTML = "";
+        document.getElementById("hourlyForecast").innerHTML = "";
+        document.getElementById("weatherIcons").innerHTML = "<tr id='hourlyForecast'></tr>";
+        document.getElementById("eventResults").innerHTML = "<tr ></tr>";
 
         $.ajax({
             url: queryURL,
